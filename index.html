@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Brinquedos Reciclados - Arte Sustentável</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f9f4;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2e7d32, #4caf50);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #2e7d32;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        /* Grade dos Brinquedos */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .card-img {
+            height: 240px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            background-color: #e2e8f0; /* Cor de fundo caso a foto demore a carregar */
+        }
+
+        .badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: rgba(46, 125, 50, 0.9);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h3 {
+            font-size: 1.4rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 1rem;
+            color: #718096;
+            margin-bottom: 15px;
+        }
+
+        .card-footer {
+            font-size: 0.85rem;
+            color: #a0aec0;
+            border-top: 1px solid #edf2f7;
+            padding-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #2d3748;
+            color: white;
+            margin-top: 80px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nossos Brinquedos Reciclados</h1>
+        <p>Transformando sucatas e embalagens em pura diversão e criatividade!</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Nossas Criações</h2>
+
+        <div class="gallery-grid">
+            
+            <!-- BRINQUEDO 1: PERSONAGEM COM POTE DE CREATINA -->
+            <div class="card">
+                <!-- DICA: Troque 'URL_FOTO_PERSONAGEM.jpg' pelo nome ou link da foto do personagem -->
+                <div class="card-img" style="background-image: url('URL_FOTO_PERSONAGEM.jpg')">
+                    <span class="badge">Diversos Materiais</span>
+                </div>
+                <div class="card-content">
+                    <h3>O Personagem Bigodudo</h3>
+                    <p>Um boneco super divertido feito reutilizando um pote usado de creatina para o corpo. Os pés foram feitos com duas tampas de desodorante, as mãos com colheres de plástico, e para dar personalidade, adicionamos olhos expressivos e um belo bigode!</p>
+                    <div class="card-footer">
+                        <span>Feito com pote de creatina, tampas e colheres</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BRINQUEDO 2: AVIÃO COM POTE DE MACARRÃO -->
+            <div class="card">
+                <!-- DICA: Troque 'URL_FOTO_AVIAO.jpg' pelo nome ou link da foto do avião -->
+                <div class="card-img" style="background-image: url('URL_FOTO_AVIAO.jpg')">
+                    <span class="badge">Pote de Macarrão</span>
+                </div>
+                <div class="card-content">
+                    <h3>Avião Explorador</h3>
+                    <p>Pronto para voar! Este avião foi construído utilizando um pote de macarrão como fuselagem. Conta com rodas feitas de tampas de amaciante acopladas em um eixo de lápis, além de um compartimento especial com buraco para encaixar um pequeno passageiro.</p>
+                    <div class="card-footer">
+                        <span>Feito com pote de macarrão e tampas de amaciante</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Brinquedos Sustentáveis - Criando um futuro melhor através da reciclagem.</p>
+    </footer>
+
+</body>
+</html>
